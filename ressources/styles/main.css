@@ -1,0 +1,142 @@
+:root {
+    --bg: #A4C6CF;
+    --secondary-bg: #F3E6D3;
+    --text-color: #264A5E;
+    --accent: #E44A4A;
+    --hover: #F9C66D;
+    --font-title: 'Orbitron', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --box-shadow: 0 2px 6px rgba(38, 74, 94, 0.15);
+    --box-shadow-high: 0px 20px 40px rgba(38, 74, 94, 0.55);
+    --btn-shadow: 0 10px 40px var(--hover)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    min-height: 100vh; /* Changed to 100vh to ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto; /* Ensures main content takes up available space */
+}
+
+header {
+    background: var(--secondary-bg);
+    padding: 1.5rem 2rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: var(--font-title);
+    color: var(--accent);
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 0 var(--hover);
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: var(--font-title);
+    color: var(--accent);
+    text-shadow: 1px 1px 0 var(--hover);
+    margin-bottom: 16px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 19px;
+}
+
+.button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: var(--accent);
+    color: white;
+    font-family: var(--font-title);
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow: var(--box-shadow-high);;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.button:hover {
+    background: var(--hover);
+    color: var(--text);
+    box-shadow: var(--btn-shadow);
+    transform: scale(1.5);
+}
+
+.section {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--secondary-bg);
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 300px;
+    box-shadow: var(--box-shadow-high);
+    text-align: center;
+}
+
+.card h3 {
+    font-family: var(--font-title);
+    color: var(--accent);
+    text-shadow: 1px 1px 0 var(--hover);
+    margin-bottom: 1rem;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-bg);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--accent);
+    flex-shrink: 0;
+}
