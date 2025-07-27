@@ -37,22 +37,12 @@ main {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background: var(--secondary-bg);
     padding: 1.5rem 2rem;
     box-shadow: var(--box-shadow);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: transform 0.3s ease;
-    z-index: 1000;
-}
-
-.header-hidden {
-    transform: translateY(-100%);
 }
 
 header h1 {
