@@ -90,11 +90,32 @@ h2 {
     display: inline-block;
 }
 
+.link-button {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+    background: var(--accent);
+    color: white;
+    font-family: var(--font-title);
+    text-decoration: none;
+    border-radius: 40px;
+    box-shadow: var(--box-shadow-high);;
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+}
+
 .button:hover {
     background: var(--hover);
     color: var(--text);
     box-shadow: var(--btn-shadow);
     transform: scale(1.5);
+}
+
+.link-button:hover {
+    background: var(--hover);
+    color: var(--text);
+    box-shadow: var(--btn-shadow);
+    transform: scale(1.05);
 }
 
 .section {
