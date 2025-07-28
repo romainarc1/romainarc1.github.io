@@ -7,44 +7,45 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="ressources/styles/main.css">
 </head>
+
+
 <body>
+    <section class="hero">
+        <h1>Taggrom</h1>
+        <h2>Portfolio</h2>
+        <p>Bienvenue sur mon portfolio, l'endroit ou vous pourrez retrouver tout mon travail.</p>
+    </section>
 
-    <div class="">
-        <section class="hero">
-            <h1>Taggrom</h1>
-            <h2>Portfolio</h2>
-            <p>Bienvenue sur mon portfolio, l'endroit ou vous pourrez retrouver tout mon travail.</p>
-        </section>
-
-        <section class="section">
-            <img src="https://www.placeholderimage.eu/api" class="BGimg">
-            <img src="https://www.placeholderimage.eu/api">
-            <div>
-                <h3>Projet Alpha</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ultrices leo.</p>
+<section class="section">
+    <img src="ressources/Projects/l'oeil du tophographe/cover.webp" class="bg-blur" alt="">
+    <div class="content">
+        <div class="main-content">
+            <img src="ressources/Projects/l'oeil du tophographe/cover.webp">
+            <div class="MCcombo">
+                <h3>L'oeil du tophographe</h3>
+                <button class="toggleBtn button">Voir le projet</button>
             </div>
-        </section>
+        </div>
+        <div class="hidden-content">
+            <p>Bonjour, ceci est un projet dans le cadre de la fac, et est à but humoristique, de plus on avait du matériel cassé, d'où le son pas très agréable, et un moment de tournage très court, 1 journée.</p>
+            <p>Ce court-métrage nous a value le prix des meilleur dialogue dans le festival dans la fac.</p>
+            <p>Vidéo déjà posté sur le compte ytb de Margaux Rochette.</p>
+        </div>
+    </div> 
+</section>
 
-        <section class="section">
-            <img src="https://www.placeholderimage.eu/api" class="BGimg">
-            <img src="https://www.placeholderimage.eu/api">
-            <div>
-                <h3>Projet Alpha</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ultrices leo.</p>
-            </div>
-        </section>
 
-        <section class="section">
-            <img src="https://www.placeholderimage.eu/api" class="BGimg">
-            <img src="https://www.placeholderimage.eu/api">
-            <div>
-                <h3>Projet Alpha</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ultrices leo.</p>
-            </div>
-        </section>
     <footer>
         &copy; 2025 Taggrom. Tous droits réservés.
     </footer>
 
+    <script>
+    document.querySelectorAll('.toggleBtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const contentDiv = btn.closest('.content').querySelector('.hidden-content');
+        contentDiv.classList.toggle('show');
+    });
+    });
+</script>
 </body>
 </html>
