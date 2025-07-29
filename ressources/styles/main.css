@@ -178,11 +178,7 @@ h2 {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(
-        circle at 30% 30%,
-        rgba(255, 255, 255, 0.3),
-        transparent 70%
-    ); /* Reflet lumineux */
+
     opacity: 0.4;
     pointer-events: none;
     animation: shimmer 6s infinite;
