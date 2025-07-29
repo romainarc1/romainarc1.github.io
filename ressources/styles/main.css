@@ -4,8 +4,9 @@
     --text-color: #264A5E;
     --accent: #E44A4A;
     --hover: #F9C66D;
-    --font-title: 'Bungee Tint', sans-serif;
-    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-title: 'Major Mono Display', sans-serif;
+    --font-body: 'Space Mono', sans-serif;
+    --font-title-small : 'Alfa Slab One', sans-serif
     --box-shadow-high: 0px 20px 40px rgba(38, 74, 94, 0.55);
     --btn-shadow: 0 10px 40px var(--hover)
 }
@@ -51,9 +52,9 @@ main {
 
 h1 {
     font-family: var(--font-title);
-    color: var(--accent);
+    color: var(--hover);
     font-size: 60px;
-    text-shadow: 1px 1px 0 var(--hover);
+    text-shadow: 1px 1px 0 var(--accent);
 }
 
 
@@ -65,8 +66,8 @@ h1 {
 h2 {
     font-size: 40px;
     font-family: var(--font-title);
-    color: var(--accent);
-    text-shadow: 1px 1px 0 var(--hover);
+    color: var(--hover);
+    text-shadow: 1px 1px 0 var(--accent);
     margin-bottom: 16px;
 }
 
@@ -81,7 +82,7 @@ h2 {
     padding: 1rem 2rem;
     background: var(--accent);
     color: white;
-    font-family: var(--font-title);
+    font-family: var(--font-body);
     text-decoration: none;
     border-radius: 40px;
     box-shadow: var(--box-shadow-high);;
@@ -153,10 +154,13 @@ h2 {
 
 
 .MCcombo {
+    align-self: right;
+    min-width: 50%;
+    text-align: center;
     padding: 20px;
     border-radius: 15px;
     margin-left: 40px;
-    background: rgba(255, 255, 255, 0.399); /* Fond semi-transparent */
+    background: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
     backdrop-filter: blur(15px) brightness(1.2); /* Flou et légère luminosité */
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.2), /* Ombre douce */
@@ -200,8 +204,8 @@ h2 {
 }
 
 .content img {
-    width: auto;
-    height: 200px;
+    width: 300px;
+    height: auto;
     border-radius: 5px;
     border: var(--hover) 2px groove;
 }
@@ -213,9 +217,8 @@ h2 {
 
 
 .content h3 {
-    font-family: var(--font-title);
-    color: var(--accent);
-    text-shadow: 1px 1px 0 var(--hover);
+    font-family: var(--font-title-small);
+    color: var(--text-color);
     margin-bottom: 1rem;
 }
 
@@ -227,7 +230,7 @@ h2 {
     transition: max-height 0.5s ease, opacity 0.5s ease;
     margin-top: 100px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.399); /* Fond semi-transparent */
+    background: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
     border-radius: 20px;
     backdrop-filter: blur(15px) brightness(1.2); /* Flou et légère luminosité */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.3); /* Reflet interne */
