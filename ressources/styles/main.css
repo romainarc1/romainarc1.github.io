@@ -17,21 +17,30 @@
 #S1 {
     background-image: url("../Projects/l'oeil du tophographe/cover.webp");
 }
+#S1 .MCcombo { /*Pour changer le fond de la zone de verre du titre */
+        background: rgba(255, 255, 255, 0.6);
+}
 
-
+/* ------------- S2 ------------- */
 #S2 {
-    background-image: url("https://www.placeholderimage.eu/api");
+    background-image: url("../Projects/Sans\ se\ retourner/BG.png");
+}
+
+#S2 .MCcombo {
+        background: rgba(0, 0, 0, 0.6);
 }
 @font-face {
-    font-family: 'Agufina';
-    src: url('fonts/Aguafina_Script/AguafinaScript-Regular.ttf') format('truetype');
+    font-family: 'Jedira';
+    src: url('fonts/jedira/TTF/Jedira-Regular.ttf') format('truetype');
+    src: url('fonts/jedira/Webfonts/Jedira-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 #S2 h3 {
-    font-family: Agufina;
-    color: rgb(225, 7, 174);
+    font-family: Jedira, sans-serif;
+    color: rgb(244, 188, 215);
+    text-shadow: 0px 3px 10px rgb(244, 188, 215, 0.5);
     font-size: 50px;
 }
 
@@ -174,23 +183,19 @@ h2 {
     padding: 20px;
     border-radius: 15px;
     margin-left: 40px;
-    background: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
-    backdrop-filter: blur(15px) brightness(1.2); /* Flou et légère luminosité */
+    backdrop-filter: blur(15px) brightness(1.2); 
     box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.2), /* Ombre douce */
-        inset 0 0 10px rgba(255, 255, 255, 0.3); /* Reflet interne */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure cristalline */
-    transform: perspective(1000px) rotateX(0.1deg) rotateY(0.1deg); /* Perspective 3D */
+        0 8px 32px rgba(0, 0, 0, 0.2), 
+        inset 0 0 10px rgba(255, 255, 255, 0.3); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    transform: perspective(1000px) rotateX(0.1deg) rotateY(0.1deg); 
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    position: relative; /* Nécessaire pour le pseudo-élément ::before */
+    position: relative; 
 }
 
 .MCcombo:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg); /* Animation au survol */
-    box-shadow: 
-        0 12px 40px rgba(0, 0, 0, 0.3), 
-        inset 0 0 15px rgba(255, 255, 255, 0.4);
-}
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg); 
+} 
 
 .MCcombo::before {
     content: '';
@@ -220,8 +225,8 @@ h2 {
 .content img {
     width: 300px;
     height: auto;
-    border-radius: 5px;
-    border: var(--hover) 2px groove;
+    border-radius: 15px;
+    box-shadow : 0px 0px 10px var(--hover)
 }
 
 .content button {
