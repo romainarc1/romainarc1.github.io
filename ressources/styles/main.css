@@ -145,6 +145,7 @@ h2 {
     position: relative;
     box-shadow: none;
     background-size: cover;
+    
 }
 
 .bg-blur {
@@ -179,7 +180,7 @@ h2 {
 .MCcombo {
     align-self: right;
     min-width: 50%;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     border-radius: 15px;
     margin-left: 40px;
@@ -247,8 +248,8 @@ h2 {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease;
-    margin-top: 100px;
-    padding: 10px;
+    margin-top: 0;
+    padding: 0;
     background: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
     border-radius: 20px;
     backdrop-filter: blur(15px) brightness(1.2); /* Flou et légère luminosité */
@@ -290,8 +291,10 @@ h2 {
     }
 
 .hidden-content.show {
-    max-height: 500px; /* ajuste si ton contenu est plus grand */
+    max-height: 900px; /* ajuste si ton contenu est plus grand */
     opacity: 1;
+    margin-top: 40px;
+    padding: 10px;
 }
 
 footer {
