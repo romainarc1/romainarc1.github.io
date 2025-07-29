@@ -11,18 +11,32 @@
     --btn-shadow: 0 10px 40px var(--hover)
 }
 
+/* ================ ZONES DE PERSONALISATION =============== */
+
+
 #S1 {
     background-image: url("../Projects/l'oeil du tophographe/cover.webp");
 }
 
+
 #S2 {
     background-image: url("https://www.placeholderimage.eu/api");
 }
+@font-face {
+    font-family: 'Agufina';
+    src: url('fonts/Aguafina_Script/AguafinaScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#S2 h3 {
+    font-family: Agufina;
+    color: rgb(225, 7, 174);
+    font-size: 50px;
+}
 
 
-
-
-
+/* ================ FIN DE ZONE DE PERSONALISATION =============== */
 * {
     box-sizing: border-box;
     margin: 0;
