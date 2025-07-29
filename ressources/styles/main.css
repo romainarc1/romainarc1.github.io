@@ -4,7 +4,7 @@
     --text-color: #264A5E;
     --accent: #E44A4A;
     --hover: #F9C66D;
-    --font-title: 'Orbitron', sans-serif;
+    --font-title: 'Bungee Tint', sans-serif;
     --font-body: 'IBM Plex Sans', sans-serif;
     --box-shadow-high: 0px 20px 40px rgba(38, 74, 94, 0.55);
     --btn-shadow: 0 10px 40px var(--hover)
@@ -151,6 +151,7 @@ h2 {
     flex-wrap: nowrap;
 }
 
+
 .MCcombo {
     padding: 20px;
     border-radius: 15px;
@@ -202,6 +203,7 @@ h2 {
     width: auto;
     height: 200px;
     border-radius: 5px;
+    border: var(--hover) 2px groove;
 }
 
 .content button {
