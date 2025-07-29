@@ -13,13 +13,37 @@
 
 /* ================ ZONES DE PERSONALISATION =============== */
 
-
-#S1 {
+/* Pour changer l'image de fond de la section */
+#S1 { 
     background-image: url("../Projects/l'oeil du tophographe/cover.webp");
 }
-#S1 .MCcombo { /*Pour changer le fond de la zone de verre du titre */
+
+/*Pour changer le fond de la zone de verre du titre */
+
+#S1 .MCcombo { 
         background: rgba(255, 255, 255, 0.6);
 }
+/* Pour changer le glow de l'image de couverture */
+#S1 .content img {
+        box-shadow : 0px 0px 10px rgb(0, 68, 255)
+}
+
+/* Pour installer la police d'écriture */
+/* @font-face {
+    font-family: 'Jedira';
+    src: url('fonts/jedira/TTF/Jedira-Regular.ttf') format('truetype');
+    src: url('fonts/jedira/Webfonts/Jedira-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* Pour définir le titre du projet */
+/* #S1 h3 {
+    font-family: Jedira, sans-serif;
+    color: rgb(244, 188, 215);
+    text-shadow: 0px 3px 10px rgb(244, 188, 215, 0.5);
+    font-size: 50px;
+} */
 
 /* ------------- S2 ------------- */
 #S2 {
@@ -29,6 +53,12 @@
 #S2 .MCcombo {
         background: rgba(0, 0, 0, 0.6);
 }
+
+#S2 .content img {
+        box-shadow : 0px 0px 10px var(--hover)
+}
+
+
 @font-face {
     font-family: 'Jedira';
     src: url('fonts/jedira/TTF/Jedira-Regular.ttf') format('truetype');
@@ -101,7 +131,8 @@ h2 {
 }
 
 .button {
-    margin-top: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 1rem 2rem;
     background: var(--accent);
     color: white;
@@ -179,7 +210,7 @@ h2 {
 
 .MCcombo {
     align-self: right;
-    min-width: 50%;
+    min-width: calc(100% - 335px);
     text-align: left;
     padding: 20px;
     border-radius: 15px;
@@ -227,7 +258,6 @@ h2 {
     width: 300px;
     height: auto;
     border-radius: 15px;
-    box-shadow : 0px 0px 10px var(--hover)
 }
 
 .content button {
