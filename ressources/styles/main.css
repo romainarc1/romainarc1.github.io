@@ -24,7 +24,7 @@
         background: rgba(255, 255, 255, 0.6);
 }
 /* Pour changer le glow de l'image de couverture */
-#S1 .content img {
+#S1 .content .coverimg {
         box-shadow : 0px 0px 10px rgb(0, 68, 255)
 }
 
@@ -54,7 +54,7 @@
         background: rgba(0, 0, 0, 0.6);
 }
 
-#S2 .content img {
+#S2 .content .coverimg {
         box-shadow : 0px 0px 10px var(--hover)
 }
 
