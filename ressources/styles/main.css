@@ -119,7 +119,7 @@ h2 {
     padding: 1rem 2rem;
     background: var(--accent);
     color: white;
-    font-family: var(--font-title);
+    font-family: var(--font-body);
     text-decoration: none;
     border-radius: 40px;
     box-shadow: var(--box-shadow-high);;
