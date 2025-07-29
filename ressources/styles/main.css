@@ -131,7 +131,7 @@ h2 {
     background: var(--hover);
     color: var(--text);
     box-shadow: var(--btn-shadow);
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .link-button:hover {
