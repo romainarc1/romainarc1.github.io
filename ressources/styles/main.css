@@ -6,9 +6,9 @@
     --hover: #F9C66D;
     --font-title: 'Major Mono Display', sans-serif;
     --font-body: 'Space Mono', sans-serif;
-    --font-title-small : 'Alfa Slab One', sans-serif
+    --font-title-small: 'Alfa Slab One', sans-serif;
     --box-shadow-high: 0px 20px 40px rgba(38, 74, 94, 0.55);
-    --btn-shadow: 0 10px 40px var(--hover)
+    --btn-shadow: 0 10px 40px var(--hover);
 }
 
 /* ================ ZONES DE PERSONALISATION =============== */
@@ -18,14 +18,14 @@
     background-image: url("../Projects/l'oeil du tophographe/cover.webp");
 }
 
-/*Pour changer le fond de la zone de verre du titre */
-
+/* Pour changer le fond de la zone de verre du titre */
 #S1 .MCcombo { 
-        background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
 }
+
 /* Pour changer le glow de l'image de couverture */
 #S1 .content .coverimg {
-        box-shadow : 0px 0px 10px rgb(0, 68, 255)
+    box-shadow: 0px 0px 10px rgb(0, 68, 255);
 }
 
 /* Pour installer la police d'écriture */
@@ -51,13 +51,12 @@
 }
 
 #S2 .MCcombo {
-        background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #S2 .content .coverimg {
-        box-shadow : 0px 0px 10px var(--hover)
+    box-shadow: 0px 0px 10px var(--hover);
 }
-
 
 @font-face {
     font-family: 'Jedira';
@@ -73,7 +72,6 @@
     text-shadow: 0px 3px 10px rgb(244, 188, 215, 0.5);
     font-size: 50px;
 }
-
 
 /* ================ FIN DE ZONE DE PERSONALISATION =============== */
 * {
@@ -92,16 +90,14 @@ body {
     color: var(--text);
     font-family: var(--font-body);
     line-height: 1.6;
-    min-height: 100vh; /* Changed to 100vh to ensure full viewport height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto; /* Ensures main content takes up available space */
+    flex: 1 0 auto;
 }
-
-
 
 h1 {
     font-family: var(--font-title);
@@ -109,7 +105,6 @@ h1 {
     font-size: 60px;
     text-shadow: 1px 1px 0 var(--accent);
 }
-
 
 .hero {
     text-align: center;
@@ -139,7 +134,7 @@ h2 {
     font-family: var(--font-body);
     text-decoration: none;
     border-radius: 40px;
-    box-shadow: var(--box-shadow-high);;
+    box-shadow: var(--box-shadow-high);
     transition: 0.2s ease-in-out;
     display: inline-block;
 }
@@ -153,7 +148,7 @@ h2 {
     font-family: var(--font-body);
     text-decoration: none;
     border-radius: 40px;
-    box-shadow: var(--box-shadow-high);;
+    box-shadow: var(--box-shadow-high);
     transition: 0.2s ease-in-out;
     display: inline-block;
 }
@@ -176,19 +171,19 @@ h2 {
     position: relative;
     box-shadow: none;
     background-size: cover;
-    
 }
 
 .bg-blur {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     filter: blur(5px);
     z-index: -1;
     pointer-events: none;
-    }
+}
 
 .content {
     padding: 3rem 2rem;
@@ -198,15 +193,21 @@ h2 {
     border: var(--bg) 5px solid;
     min-height: 300px;
     overflow: hidden;
-    backdrop-filter: blur(15px) brightness(1.2); /* Flou et légère luminosité */
+    backdrop-filter: blur(15px) brightness(1.2);
 }
 
 .main-content {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 
 .MCcombo {
     align-self: right;
@@ -215,19 +216,17 @@ h2 {
     padding: 20px;
     border-radius: 15px;
     margin-left: 40px;
-    backdrop-filter: blur(15px) brightness(1.2); 
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.2), 
-        inset 0 0 10px rgba(255, 255, 255, 0.3); 
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    transform: perspective(1000px) rotateX(0.1deg) rotateY(0.1deg); 
+    backdrop-filter: blur(15px) brightness(1.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: perspective(1000px) rotateX(0.1deg) rotateY(0.1deg);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    position: relative; 
+    position: relative;
 }
 
 .MCcombo:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg); 
-} 
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
 
 .MCcombo::before {
     content: '';
@@ -236,7 +235,6 @@ h2 {
     left: -50%;
     width: 200%;
     height: 200%;
-
     opacity: 0.4;
     pointer-events: none;
     animation: shimmer 6s infinite;
@@ -254,24 +252,37 @@ h2 {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .MCcombo {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}
+
 .content img {
     width: 300px;
     height: auto;
     border-radius: 15px;
 }
 
-.content button {
-    margin-left : 10px;
+@media screen and (max-width: 1024px) {
+    .content img {
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+        margin-left: 5%;
+    }
 }
 
-
+.content button {
+    margin-left: 10px;
+}
 
 .content h3 {
     font-family: var(--font-title-small);
     color: var(--text-color);
     margin-bottom: 1rem;
 }
-
 
 .hidden-content {
     overflow: hidden;
@@ -280,18 +291,17 @@ h2 {
     transition: max-height 0.5s ease, opacity 0.5s ease;
     margin-top: 0;
     padding: 0;
-    background: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
-    backdrop-filter: blur(15px) brightness(1.2); /* Flou et légère luminosité */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.3); /* Reflet interne */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure cristalline */
-    transform: perspective(1000px) rotateX(0.1deg) rotateY(0.1deg); /* Perspective 3D */
+    backdrop-filter: blur(15px) brightness(1.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: perspective(1000px) rotateX(0.1deg) rotateY(0.1deg);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    transition: all 0.5s ease;
-
 }
+
 .hidden-content:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg); /* Animation au survol */
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
@@ -302,26 +312,14 @@ h2 {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 30% 30%,rgba(255, 255, 255, 0.3),transparent 70%); /* Reflet lumineux */
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3), transparent 70%);
     opacity: 0.4;
     pointer-events: none;
     animation: shimmer 6s infinite;
-    }
-
-    @keyframes shimmer {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(20%, 20%);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-    }
+}
 
 .hidden-content.show {
-    max-height: 900px; /* ajuste si ton contenu est plus grand */
+    max-height: 900px;
     opacity: 1;
     margin-top: 40px;
     padding: 10px;
