@@ -64,12 +64,12 @@
     </footer>
 
     <script>
-    document.querySelectorAll('.toggleBtn').forEach(btn => {
+document.querySelectorAll('.toggleBtn').forEach(btn => {
+    const contentDiv = btn.closest('.content').querySelector('.hidden-content');
     btn.addEventListener('click', () => {
-        const contentDiv = btn.closest('.content').querySelector('.hidden-content');
         contentDiv.classList.toggle('show');
     });
-    });
+});
 </script>
 </body>
 </html>
