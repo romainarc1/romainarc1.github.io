@@ -13,6 +13,8 @@
 
 /* ================ ZONES DE PERSONALISATION =============== */
 
+/* ------------- S1 ------------- */
+
 /* Pour changer l'image de fond de la section */
 #S1 { 
     background-image: url("../Projects/l'oeil du tophographe/cover.webp");
@@ -55,7 +57,7 @@
 }
 
 #S2 .content .coverimg {
-    box-shadow: 0px 0px 10px var(--hover);
+    box-shadow: 0px 0px 10px #F9C66D;
 }
 
 @font-face {
